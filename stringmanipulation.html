@@ -14,14 +14,6 @@
 
 
 
-
-
-
-
-
-
-
-
     <script>
 
         var sentenceNode = document.getElementById("sentence")
@@ -34,10 +26,12 @@
         var allWords = sentence.split(" ")
         var bracketWords = "(" + allWords.join(")(") + ")"
 
-        console.log(allWords)
+        var firstThreeWords = allWords.slice(0, 3)
 
 
-
+        var middleWords = allWords.slice(5, 10)
+        var makeSentence = middleWords.join(" ")
+        sentenceNode.innerText = makeSentence
 
     </script>
 </body>

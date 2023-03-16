@@ -8,20 +8,16 @@
 </head>
 <body>
     
-    <h1>Your input was:</h1>
-    <h3 id="customInput">_______</h3>
-
-
+    <h1 id="welcome"></h1>
 
     <script>
-        
-        var name = prompt("What is your name?", "Name")
-        var h3node = document.getElementById("customInput")
-        h3node.innerText = name
-        console.log(name)
-        
+        var name = prompt("What is your name?")
+        var welcomeNode = document.getElementById("welcome")
+
+        if(name == "amogus") {
+            welcomeNode.innerText = "Welcome to your website sussy amogus"
+        }
 
     </script>
-
 </body>
 </html>

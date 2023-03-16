@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="sentence">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui id ornare arcu odio ut. Pretium nibh ipsum consequat nisl vel. Lacus vestibulum sed arcu non odio euismod lacinia at. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Sed cras ornare arcu dui vivamus arcu felis bibendum. Proin nibh nisl condimentum id. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Duis ut diam quam nulla. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Quis enim lobortis scelerisque fermentum. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam.
+    </h1>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var sentenceNode = document.getElementById("sentence")
+        var sentence = sentenceNode.innerText
+
+        var upperSentence = sentence.toUpperCase()
+        var lowerSentence = sentence.toLowerCase()
+        var firstElevenChars = sentence.substr(0, 11)
+
+        var allWords = sentence.split(" ")
+        var bracketWords = "(" + allWords.join(")(") + ")"
+
+        console.log(allWords)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="userLink">
+
+    </div>
+
+
+
+    <script>
+
+        var link = prompt("Give me a link!", "http://google.com")
+        var linkNode = document.getElementById("userLink")
+
+        if(link.substr(0, 4) == "http") {
+            linkNode.innerHTML = '<a href="' + link + '">Your link</a>'
+        } else {
+            linkNode.innerHTML = '<a href="http://' + link + '">Your link</a>'
+        }
+
+
+
+    </script>
+
+</body>
+</html>
